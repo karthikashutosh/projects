@@ -67,7 +67,7 @@ export const handlers = [
     let body: Partial<CatDataType>[];
 
     try {
-      body = await request.json() as Partial<CatDataType>[];
+      body = (await request.json()) as Partial<CatDataType>[];
     } catch {
       body = [];
     }
