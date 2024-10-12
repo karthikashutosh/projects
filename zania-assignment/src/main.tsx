@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
+import './index.css'
 
 async function prepare() {
   if (import.meta.env.DEV && import.meta.env.VITE_API_MOCKING === 'enabled') {
