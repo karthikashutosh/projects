@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useCallback, useMemo } from "react";
-import Overlay from "./components/overlay";
+import Overlay from "./components/ImageOverlay";
 import { CatDataType } from "./types";
 import LoadingSpinner from "./components/LoadingSpinner";
 import { setStorageData } from "./mocks/handler";
