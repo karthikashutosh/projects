@@ -1,50 +1,66 @@
-# React + TypeScript + Vite
+# Cat Gallery React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Cat Gallery React App! This application allows you to view, reorder, and interact with a delightful collection of cat images.
 
-Currently, two official plugins are available:
+## Table of Contents
+1. [Getting Started](#getting-started)
+2. [Running the App](#running-the-app)
+3. [Using the App](#using-the-app)
+4. [Troubleshooting](#troubleshooting)
+5. [Contact](#contact)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
 
-## Expanding the ESLint configuration
+Before you begin, make sure you have the following installed on your computer:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Node.js (version 14 or higher)
+- npm (usually comes with Node.js)
 
-- Configure the top-level `parserOptions` property like this:
+To check if you have Node.js installed, open your terminal and run:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```
+node --version
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+If you need to install Node.js, visit the [official Node.js website](https://nodejs.org/) and follow the installation instructions for your operating system.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Running the App
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Clone this repository to your local machine:
+   ```
+   git clone https://github.com/your-username/cat-gallery-react-app.git
+   ```
+
+2. Navigate to the project directory:
+   ```
+   cd zania-assignment
+   ```
+
+3. Install the necessary dependencies:
+   ```
+   npm install
+   ```
+
+4. Start the development server:
+   ```
+   npm start
+   ```
+
+5. Open your web browser and go to `http://localhost:3000`. You should now see the Cat Gallery app running!
+
+## Using the App
+
+Once the app is running, you can:
+
+- View a grid of cat images
+- Click on an image to see more details in an overlay
+- Drag and drop images to reorder them
+- The app automatically saves your changes every few seconds
+
+## Troubleshooting
+
+If you encounter any issues:
+
+1. Make sure you're using a compatible version of Node.js
+2. Try deleting the `node_modules` folder and running `npm install` again
+3. Check the console in your web browser for any error messages
