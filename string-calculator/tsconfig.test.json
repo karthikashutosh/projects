@@ -1,0 +1,20 @@
+{
+    "extends": "./tsconfig.app.json",
+    "compilerOptions": {
+         "esModuleInterop": true,
+    "moduleResolution": "node",
+      "module": "commonjs",
+      "target": "es5",
+      "jsx": "react-jsx",
+      "types": ["jest", "node", "@testing-library/react"]
+    },
+    "include": [
+      "src/**/*.ts",
+      "src/**/*.tsx",
+      "tests/**/*.ts",
+      "tests/**/*.tsx"
+    ],
+    "exclude": [
+      "node_modules"
+    ]
+  }
