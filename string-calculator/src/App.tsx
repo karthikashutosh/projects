@@ -53,6 +53,7 @@ const App =  () => {
               border: '1px solid #000000',
               borderRadius: '4px',
               marginBottom: '1rem',
+              color:"gray",
               backgroundColor:"white"
             }}
           />
